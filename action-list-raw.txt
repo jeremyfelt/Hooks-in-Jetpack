@@ -58,9 +58,7 @@ modules/custom-css/custom-css.php:1453:			do_action( 'csstidy_optimize_subvalue'
 modules/holiday-snow.php:32:		do_action( 'jetpack_holiday_snow_option_updated' );
 modules/holiday-snow.php:40:	do_action( 'jetpack_holiday_snowing' );
 modules/infinite-scroll/infinity.php:434:		do_action( 'custom_ajax_infinite_scroll' );
-modules/infinite-scroll/infinity.php:441:	 * @uses self::get_settings, esc_js, esc_url_raw, self::has_wrapper, __, apply_filters, do_action
 modules/infinite-scroll/infinity.php:480:		do_action( 'infinite_scroll_wp_head' );
-modules/infinite-scroll/infinity.php:724:	 * @uses current_user_can, get_option, self::set_last_post_time, current_user_can, apply_filters, self::get_settings, add_filter, WP_Query, remove_filter, have_posts, wp_head, do_action, add_action, this::render, this::has_wrapper, esc_attr, wp_footer, sharing_register_post_for_share_counts, get_the_id
 modules/infinite-scroll/infinity.php:779:			do_action( 'infinite_scroll_render' );
 modules/infinite-scroll/infinity.php:788:				do_action( 'infinite_scroll_render' );
 modules/infinite-scroll/infinity.php:795:				do_action( 'infinite_scroll_empty' );
