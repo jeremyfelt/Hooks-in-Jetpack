@@ -1,0 +1,159 @@
+class.jetpack-post-images.php:394:		$media = apply_filters( 
+class.jetpack-post-images.php:438:		return apply_filters( 
+class.jetpack-xmlrpc-server.php:43:		return apply_filters( 
+class.json-api-endpoints.php:447:			$return[$key] = (object) $this->cast_and_filter( $value, apply_filters( 
+class.json-api-endpoints.php:597:			$response = apply_filters( 
+class.json-api-endpoints.php:667:		$curl = apply_filters( 
+class.json-api-endpoints.php:670:		$php = apply_filters( 
+class.json-api-endpoints.php:1520:		return (object) apply_filters( 
+class.photon.php:157:				if ( apply_filters( 
+class.photon.php:197:					if ( preg_match( 
+class.photon.php:276:					$args = apply_filters( 
+class.photon.php:335:		if ( is_admin() || apply_filters( 
+class.photon.php:379:				$photon_args = apply_filters( 
+class.photon.php:401:				$photon_args = apply_filters( 
+functions.gallery.php:12:		$this->gallery_types = apply_filters( 
+functions.opengraph.php:14:	if ( false === apply_filters( 
+functions.opengraph.php:25:	$image_width  = absint( apply_filters( 
+functions.opengraph.php:26:	$image_height = absint( apply_filters( 
+functions.opengraph.php:85:	$tags = apply_filters( 
+functions.opengraph.php:96:			$og_output .= apply_filters( 
+functions.photon.php:15:	$image_url = apply_filters( 
+functions.photon.php:16:	$args      = apply_filters( 
+functions.photon.php:49:	if ( ! apply_filters( 
+functions.photon.php:68:	if ( isset( $image_url_parts[
+jetpack.php:439:		if ( apply_filters( 
+jetpack.php:2564:			$free_text = apply_filters( 
+jetpack.php:2589:						<p><?php echo apply_filters( 
+jetpack.php:2594:					<?php if ( !$activated && current_user_can( 
+jetpack.php:2601:					if ( current_user_can( 
+modules/after-the-deadline/proxy.php:19:		
+modules/after-the-deadline/proxy.php:47:	$service = apply_filters( 
+modules/after-the-deadline.php:218:	return apply_filters( 
+modules/carousel/jetpack-carousel.php:53:			$this->prebuilt_widths = apply_filters( 
+modules/carousel/jetpack-carousel.php:66:		return apply_filters( 
+modules/carousel/jetpack-carousel.php:75:		return apply_filters( 
+modules/carousel/jetpack-carousel.php:79:		if ( ! empty( $output ) && ! apply_filters( 
+modules/carousel/jetpack-carousel.php:135:			$localize_strings = apply_filters( 
+modules/carousel/jetpack-carousel.php:218:		$html = apply_filters( 
+modules/carousel/jetpack-carousel.php:230:			$extra_data = apply_filters( 
+modules/comments/base.php:267:			$comment_cookie_lifetime = apply_filters( 
+modules/comments/comments.php:187:			echo 
+modules/contact-form/grunion-contact-form.php:159:			apply_filters( 
+modules/contact-form/grunion-contact-form.php:290:		return apply_filters( 
+modules/contact-form/grunion-contact-form.php:598:		if ( apply_filters( 
+modules/contact-form/grunion-contact-form.php:706:			$r .= apply_filters( 
+modules/contact-form/grunion-contact-form.php:719:			$url = apply_filters( 
+modules/contact-form/grunion-contact-form.php:875:			$comment_author = Grunion_Contact_Form_Plugin::strip_tags( stripslashes( apply_filters( 
+modules/contact-form/grunion-contact-form.php:881:			$comment_author_email = Grunion_Contact_Form_Plugin::strip_tags( stripslashes( apply_filters( 
+modules/contact-form/grunion-contact-form.php:887:			$comment_author_url = Grunion_Contact_Form_Plugin::strip_tags( stripslashes( apply_filters( 
+modules/contact-form/grunion-contact-form.php:938:		$is_spam = apply_filters( 
+modules/contact-form/grunion-contact-form.php:947:		$to = (array) apply_filters( 
+modules/contact-form/grunion-contact-form.php:964:		$subject = apply_filters( 
+modules/contact-form/grunion-contact-form.php:1007:		$message = apply_filters( 
+modules/contact-form/grunion-contact-form.php:1072:		elseif ( apply_filters( 
+modules/contact-form/grunion-contact-form.php:1086:		$redirect = apply_filters( 
+modules/contact-form/grunion-contact-form.php:1376:	if ( apply_filters( 
+modules/custom-css/custom-css.php:17:		define( 
+modules/custom-css/custom-css.php:379:		return apply_filters( 
+modules/custom-css/custom-css.php:383:		$default_css = apply_filters( 
+modules/custom-css/custom-css.php:434:		$css = apply_filters( 
+modules/custom-css/custom-css.php:448:		if ( apply_filters( 
+modules/custom-css/custom-css.php:503:		$href = apply_filters( 
+modules/custom-css/custom-css.php:517:			return apply_filters( 
+modules/custom-css/custom-css.php:545:		$message = apply_filters( 
+modules/custom-css/custom-css.php:558:		$preview_flag_js = apply_filters( 
+modules/custom-css/custom-css.php:806:					<p class="css-support"><?php echo apply_filters( 
+modules/custom-css/custom-css.php:842:				$preprocessors = apply_filters( 
+modules/custom-css/custom-css.php:894:								<?php printf( __( 
+modules/custom-css/custom-css.php:1032:			$preprocessors = apply_filters( 
+modules/gravatar-hovercards.php:248:	return apply_filters( 
+modules/holiday-snow.php:37:	if ( ! apply_filters( 
+modules/holiday-snow.php:42:	$snowstorm_url = apply_filters( 
+modules/holiday-snow.php:59:	return apply_filters( 
+modules/holiday-snow.php:69:	return apply_filters( 
+modules/infinite-scroll/infinity.php:180:			$settings[
+modules/infinite-scroll/infinity.php:201:			self::$settings = apply_filters( 
+modules/infinite-scroll/infinity.php:418:		return apply_filters( 
+modules/infinite-scroll/infinity.php:478:		$js_settings = apply_filters( 
+modules/infinite-scroll/infinity.php:547:		$scripts = apply_filters( 
+modules/infinite-scroll/infinity.php:550:		$styles = apply_filters( 
+modules/infinite-scroll/infinity.php:625:		$results[
+modules/infinite-scroll/infinity.php:709:		$results[
+modules/infinite-scroll/infinity.php:758:		$query_args = apply_filters( 
+modules/infinite-scroll/infinity.php:828:		echo json_encode( apply_filters( 
+modules/infinite-scroll/infinity.php:854:		return (bool) apply_filters( 
+modules/infinite-scroll/infinity.php:878:		$credits = apply_filters( 
+modules/infinite-scroll/infinity.php:940:	$customization_file = apply_filters( 
+modules/infinite-scroll.php:123:		$customization_file = apply_filters( 
+modules/likes.php:111:		if ( apply_filters( 
+modules/likes.php:115:		$title = apply_filters( 
+modules/likes.php:240:		<?php echo apply_filters( 
+modules/likes.php:259:	  	<?php echo apply_filters( 
+modules/likes.php:800:		return apply_filters( 
+modules/likes.php:865:		$enabled = apply_filters( 
+modules/likes.php:867:		return (bool) apply_filters( 
+modules/likes.php:875:		return (bool) apply_filters( 
+modules/likes.php:884:		return (bool) apply_filters( 
+modules/likes.php:902:		return (bool) apply_filters( 
+modules/likes.php:935:		return (bool) apply_filters( 
+modules/likes.php:945:		return (bool) apply_filters( 
+modules/likes.php:955:		return (bool) apply_filters( 
+modules/likes.php:965:		return (bool) apply_filters( 
+modules/minileven/minileven.php:44:	return apply_filters( 
+modules/minileven/minileven.php:85:	return apply_filters( 
+modules/minileven/minileven.php:89:	return apply_filters( 
+modules/minileven/theme/pub/minileven/image.php:49:								$attachment_size = apply_filters( 
+modules/module-extras.php:28:		$customization_file = apply_filters( 
+modules/publicize/publicize-jetpack.php:244:		$url = apply_filters( 
+modules/publicize/publicize.php:49:			apply_filters( 
+modules/publicize/publicize.php:55:			apply_filters( 
+modules/publicize/publicize.php:60:			apply_filters( 
+modules/publicize/publicize.php:288:				if ( false == apply_filters( 
+modules/publicize/ui.php:403:							if ( !$continue = apply_filters( 
+modules/publicize/ui.php:446:							$checked = apply_filters( 
+modules/publicize/ui.php:540:			<?php echo apply_filters( 
+modules/sharedaddy/sharedaddy.php:23:	$title = apply_filters( 
+modules/sharedaddy/sharing-service.php:65:		return apply_filters( 
+modules/sharedaddy/sharing-service.php:150:			$enabled = apply_filters( 
+modules/sharedaddy/sharing-service.php:168:		$blog = apply_filters( 
+modules/sharedaddy/sharing-service.php:207:		$options[
+modules/sharedaddy/sharing-service.php:405:	if ( apply_filters( 
+modules/sharedaddy/sharing-service.php:506:	$show = apply_filters( 
+modules/sharedaddy/sharing-sources.php:35:		return apply_filters( 
+modules/sharedaddy/sharing-sources.php:223:			if ( apply_filters( 
+modules/sharedaddy/sharing-sources.php:231:				if ( ( $data = apply_filters( 
+modules/sharedaddy/sharing-sources.php:297:			<img style="float: right; display: none" class="loading" src="<?php echo apply_filters( 
+modules/sharedaddy/sharing-sources.php:335:		return apply_filters( 
+modules/sharedaddy/sharing-sources.php:340:		$related_accounts = apply_filters( 
+modules/sharedaddy/sharing-sources.php:727:			$widths = apply_filters( 
+modules/sharedaddy/sharing.php:329:	  				<?php echo apply_filters( 
+modules/sharedaddy/sharing.php:345:	  				<?php echo apply_filters( 
+modules/shortcodes/googlemaps.php:49:	if ( !isset($atts[0]) || apply_filters( 
+modules/shortcodes/polldaddy.php:87:				$title = apply_filters( 
+modules/shortcodes/slideshow.php:197:		wp_localize_script( 
+modules/shortcodes/videopress.php:1245:			return self::esc_flash_params( apply_filters( 
+modules/shortcodes/vimeo.php:67:	$html = apply_filters( 
+modules/shortcodes/youtube.php:166:	if ( apply_filters( 
+modules/shortcodes/youtube.php:218:	$w = (int) apply_filters( 
+modules/shortcodes/youtube.php:219:	$h = (int) apply_filters( 
+modules/shortcodes/youtube.php:250:	$html = apply_filters( 
+modules/stats.php:230:	$kvs = apply_filters( 
+modules/subscriptions.php:458:		echo apply_filters( 
+modules/subscriptions.php:497:		$cookie_lifetime = apply_filters( 
+modules/tiled-gallery/tiled-gallery.php:293:		return apply_filters( 
+modules/widgets/facebook-likebox.php:31:			apply_filters( 
+modules/widgets/facebook-likebox.php:56:		$title    = apply_filters( 
+modules/widgets/facebook-likebox.php:203:		return apply_filters( 
+modules/widgets/gravatar-profile.php:21:			apply_filters( 
+modules/widgets/gravatar-profile.php:34:		$title = apply_filters( 
+modules/widgets/image-widget.php:22:		$title = apply_filters( 
+modules/widgets/readmill.php:11:	 		apply_filters( 
+modules/widgets/readmill.php:113:		$title = apply_filters( 
+modules/widgets/rsslinks-widget.php:19:		$title = apply_filters( 
+modules/widgets/top-posts.php:35:			apply_filters( 
+modules/widgets/top-posts.php:121:		$title = apply_filters( 
+modules/widgets/top-posts.php:137:				
+modules/widgets/top-posts.php:148:			$get_image_options = apply_filters( 
+modules/widgets/twitter.php:24:			apply_filters( 
+modules/widgets/twitter.php:59:		$title = apply_filters( 
