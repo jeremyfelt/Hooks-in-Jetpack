@@ -6,11 +6,9 @@ class.json-api-endpoints.php:597:			$response = apply_filters( 'the_content', $r
 class.json-api-endpoints.php:667:		$curl = apply_filters( 'the_content', $curl );
 class.json-api-endpoints.php:670:		$php = apply_filters( 'the_content', $php );
 class.json-api-endpoints.php:1520:		return (object) apply_filters( 'get_attachment', $result );
-class.photon.php:130:	 * @uses self::validate_image_url, apply_filters, jetpack_photon_url, esc_url
 class.photon.php:157:				if ( apply_filters( 'jetpack_photon_skip_image', false, $src, $tag ) )
 class.photon.php:197:					if ( preg_match( '#class=["|\']?[^"\']*wp-image-([\d]+)[^"\']*["|\']?#i', $images['img_tag'][ $index ], $attachment_id ) && ( 0 === strpos( $src, $upload_dir['baseurl'] ) || apply_filters( 'jetpack_photon_image_is_local', false, compact( 'src', 'tag', 'images', 'index' ) ) ) ) {
 class.photon.php:276:					$args = apply_filters( 'jetpack_photon_post_image_args', $args, compact( 'tag', 'src', 'src_orig', 'width', 'height' ) );
-class.photon.php:329:	 * @uses is_admin, apply_filters, wp_get_attachment_url, self::validate_image_url, this::image_sizes, jetpack_photon_url
 class.photon.php:335:		if ( is_admin() || apply_filters( 'jetpack_photon_override_image_downsize', false, compact( 'image', 'attachment_id', 'size' ) ) )
 class.photon.php:379:				$photon_args = apply_filters( 'jetpack_photon_image_downsize_string', $photon_args, compact( 'image_args', 'image_url', 'attachment_id', 'size', 'transform' ) );
 class.photon.php:401:				$photon_args = apply_filters( 'jetpack_photon_image_downsize_array', $photon_args, compact( 'width', 'height', 'image_url', 'attachment_id' ) );
@@ -24,7 +22,6 @@ functions.photon.php:15:	$image_url = apply_filters( 'jetpack_photon_pre_image_u
 functions.photon.php:16:	$args      = apply_filters( 'jetpack_photon_pre_args',      $args,      $image_url, $scheme );
 functions.photon.php:49:	if ( ! apply_filters( 'jetpack_photon_any_extension_for_domain', false, $image_url_parts['host'] ) ) {
 functions.photon.php:68:	if ( isset( $image_url_parts['query'] ) && apply_filters( 'jetpack_photon_add_query_string_to_domain', false, $image_url_parts['host'] ) ) {
-jetpack.php:400:	 * @uses Jetpack::get_active_modules, add_filter, get_option, apply_filters
 jetpack.php:439:		if ( apply_filters( 'jetpack_enable_open_graph', false ) )
 jetpack.php:2564:			$free_text = apply_filters( 'jetpack_module_free_text_' . $module, $free_text );
 jetpack.php:2589:						<p><?php echo apply_filters( 'jetpack_short_module_description', $module_data['description'], $module ); ?></p>
@@ -78,23 +75,17 @@ modules/holiday-snow.php:59:	return apply_filters( 'jetpack_holiday_snow_option_
 modules/holiday-snow.php:69:	return apply_filters( 'jetpack_is_holiday_snow_season', $snow );
 modules/infinite-scroll/infinity.php:180:			$settings['footer_widgets'] = apply_filters( 'infinite_scroll_has_footer_widgets', $settings['footer_widgets'] );
 modules/infinite-scroll/infinity.php:201:			self::$settings = apply_filters( 'infinite_scroll_settings', $settings );
-modules/infinite-scroll/infinity.php:402:	 * @uses home_url, is_ssl, add_query_arg, trailingslashit, apply_filters
 modules/infinite-scroll/infinity.php:418:		return apply_filters( 'infinite_scroll_ajax_url', $ajaxurl );
-modules/infinite-scroll/infinity.php:441:	 * @uses self::get_settings, esc_js, esc_url_raw, self::has_wrapper, __, apply_filters, do_action
 modules/infinite-scroll/infinity.php:478:		$js_settings = apply_filters( 'infinite_scroll_js_settings', $js_settings );
 modules/infinite-scroll/infinity.php:547:		$scripts = apply_filters( 'infinite_scroll_existing_scripts', $scripts );
 modules/infinite-scroll/infinity.php:550:		$styles = apply_filters( 'infinite_scroll_existing_stylesheets', $styles );
 modules/infinite-scroll/infinity.php:625:		$results['scripts'] = apply_filters( 'infinite_scroll_additional_scripts', $results['scripts'], $initial_scripts, $results, $query_args, $wp_query );
 modules/infinite-scroll/infinity.php:709:		$results['styles'] = apply_filters( 'infinite_scroll_additional_stylesheets', $results['styles'], $initial_styles, $results, $query_args, $wp_query );
-modules/infinite-scroll/infinity.php:724:	 * @uses current_user_can, get_option, self::set_last_post_time, current_user_can, apply_filters, self::get_settings, add_filter, WP_Query, remove_filter, have_posts, wp_head, do_action, add_action, this::render, this::has_wrapper, esc_attr, wp_footer, sharing_register_post_for_share_counts, get_the_id
 modules/infinite-scroll/infinity.php:758:		$query_args = apply_filters( 'infinite_scroll_query_args', $query_args );
 modules/infinite-scroll/infinity.php:828:		echo json_encode( apply_filters( 'infinite_scroll_results', $results, $query_args, $wp_query ) );
-modules/infinite-scroll/infinity.php:850:	 * @uses apply_filters, current_theme_supports, is_home, is_archive, self::get_settings
 modules/infinite-scroll/infinity.php:854:		return (bool) apply_filters( 'infinite_scroll_archive_supported', current_theme_supports( 'infinite-scroll' ) && ( is_home() || is_archive() ), self::get_settings() );
-modules/infinite-scroll/infinity.php:860:	 * @uses self::get_settings, self::set_last_post_time, self::archive_supports_infinity, __, wp_get_theme, get_current_theme, apply_filters, home_url, esc_attr, get_bloginfo, bloginfo
 modules/infinite-scroll/infinity.php:878:		$credits = apply_filters( 'infinite_scroll_credit', $credits );
 modules/infinite-scroll/infinity.php:940:	$customization_file = apply_filters( 'infinite_scroll_customization_file', dirname( __FILE__ ) . "/themes/{$theme_name}.php", $theme_name );
-modules/infinite-scroll.php:113:	 * @uses is_admin, wp_get_theme, get_theme, get_current_theme, apply_filters
 modules/infinite-scroll.php:123:		$customization_file = apply_filters( 'infinite_scroll_customization_file', dirname( __FILE__ ) . "/infinite-scroll/themes/{$theme['Stylesheet']}.php", $theme['Stylesheet'] );
 modules/likes.php:111:		if ( apply_filters( 'post_flair_disable', false ) )
 modules/likes.php:115:		$title = apply_filters( 'likes_meta_box_title', __( 'Likes', 'jetpack' ) );
@@ -114,7 +105,6 @@ modules/minileven/minileven.php:44:	return apply_filters( 'jetpack_check_mobile'
 modules/minileven/minileven.php:85:	return apply_filters( 'jetpack_mobile_stylesheet', 'pub/minileven', $theme );
 modules/minileven/minileven.php:89:	return apply_filters( 'jetpack_mobile_template', 'pub/minileven', $theme );
 modules/minileven/theme/pub/minileven/image.php:49:								$attachment_size = apply_filters( 'minileven_attachment_size', 848 );
-modules/module-extras.php:17: * @uses is_admin, wp_get_theme, get_theme, get_current_theme, apply_filters
 modules/module-extras.php:28:		$customization_file = apply_filters( 'infinite_scroll_customization_file', dirname( __FILE__ ) . "/infinite-scroll/themes/{$theme['Stylesheet']}.php", $theme['Stylesheet'] );
 modules/publicize/publicize-jetpack.php:244:		$url = apply_filters( 'publicize_api_url', 'https://public-api.wordpress.com/connect/?jetpack=publicize' );
 modules/publicize/publicize.php:49:			apply_filters( 'wpas_default_message', $this->default_message ),
