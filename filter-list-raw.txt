@@ -1,0 +1,172 @@
+class.jetpack-post-images.php:394:		$media = apply_filters( 'jetpack_images_pre_get_images', $media, $post_id, $args );
+class.jetpack-post-images.php:438:		return apply_filters( 'jetpack_images_get_images', $media, $post_id, $args );
+class.jetpack-xmlrpc-server.php:43:		return apply_filters( 'jetpack_xmlrpc_methods', $jetpack_methods, $core_methods, $user );
+class.json-api-endpoints.php:447:			$return[$key] = (object) $this->cast_and_filter( $value, apply_filters( 'wpcom_json_api_attachment_cast_and_filter', $docs ), false, $for_output );
+class.json-api-endpoints.php:597:			$response = apply_filters( 'the_content', $response );
+class.json-api-endpoints.php:667:		$curl = apply_filters( 'the_content', $curl );
+class.json-api-endpoints.php:670:		$php = apply_filters( 'the_content', $php );
+class.json-api-endpoints.php:1520:		return (object) apply_filters( 'get_attachment', $result );
+class.photon.php:130:	 * @uses self::validate_image_url, apply_filters, jetpack_photon_url, esc_url
+class.photon.php:157:				if ( apply_filters( 'jetpack_photon_skip_image', false, $src, $tag ) )
+class.photon.php:197:					if ( preg_match( '#class=["|\']?[^"\']*wp-image-([\d]+)[^"\']*["|\']?#i', $images['img_tag'][ $index ], $attachment_id ) && ( 0 === strpos( $src, $upload_dir['baseurl'] ) || apply_filters( 'jetpack_photon_image_is_local', false, compact( 'src', 'tag', 'images', 'index' ) ) ) ) {
+class.photon.php:276:					$args = apply_filters( 'jetpack_photon_post_image_args', $args, compact( 'tag', 'src', 'src_orig', 'width', 'height' ) );
+class.photon.php:329:	 * @uses is_admin, apply_filters, wp_get_attachment_url, self::validate_image_url, this::image_sizes, jetpack_photon_url
+class.photon.php:335:		if ( is_admin() || apply_filters( 'jetpack_photon_override_image_downsize', false, compact( 'image', 'attachment_id', 'size' ) ) )
+class.photon.php:379:				$photon_args = apply_filters( 'jetpack_photon_image_downsize_string', $photon_args, compact( 'image_args', 'image_url', 'attachment_id', 'size', 'transform' ) );
+class.photon.php:401:				$photon_args = apply_filters( 'jetpack_photon_image_downsize_array', $photon_args, compact( 'width', 'height', 'image_url', 'attachment_id' ) );
+functions.gallery.php:12:		$this->gallery_types = apply_filters( 'jetpack_gallery_types', array() );
+functions.opengraph.php:14:	if ( false === apply_filters( 'jetpack_enable_opengraph', true ) ) {
+functions.opengraph.php:25:	$image_width  = absint( apply_filters( 'jetpack_open_graph_image_width', 200 ) );
+functions.opengraph.php:26:	$image_height = absint( apply_filters( 'jetpack_open_graph_image_height', 200 ) );
+functions.opengraph.php:85:	$tags = apply_filters( 'jetpack_open_graph_tags', $tags, compact( 'image_width', 'image_height' ) );
+functions.opengraph.php:96:			$og_output .= apply_filters( 'jetpack_open_graph_output', $og_tag );
+functions.photon.php:15:	$image_url = apply_filters( 'jetpack_photon_pre_image_url', $image_url, $args,      $scheme );
+functions.photon.php:16:	$args      = apply_filters( 'jetpack_photon_pre_args',      $args,      $image_url, $scheme );
+functions.photon.php:49:	if ( ! apply_filters( 'jetpack_photon_any_extension_for_domain', false, $image_url_parts['host'] ) ) {
+functions.photon.php:68:	if ( isset( $image_url_parts['query'] ) && apply_filters( 'jetpack_photon_add_query_string_to_domain', false, $image_url_parts['host'] ) ) {
+jetpack.php:400:	 * @uses Jetpack::get_active_modules, add_filter, get_option, apply_filters
+jetpack.php:439:		if ( apply_filters( 'jetpack_enable_open_graph', false ) )
+jetpack.php:2564:			$free_text = apply_filters( 'jetpack_module_free_text_' . $module, $free_text );
+jetpack.php:2589:						<p><?php echo apply_filters( 'jetpack_short_module_description', $module_data['description'], $module ); ?></p>
+jetpack.php:2594:					<?php if ( !$activated && current_user_can( 'manage_options' ) && apply_filters( 'jetpack_can_activate_' . $module, true ) ) : ?>
+jetpack.php:2601:					if ( current_user_can( 'manage_options' ) && apply_filters( 'jetpack_module_configurable_' . $module, false ) ) {
+modules/after-the-deadline/proxy.php:19:		'timeout'              => apply_filters( 'atd_http_post_timeout', 15 ),
+modules/after-the-deadline/proxy.php:47:	$service = apply_filters( 'atd_service_domain', 'service.afterthedeadline.com' );
+modules/after-the-deadline.php:218:	return apply_filters( 'atd_load_scripts', false );
+modules/carousel/jetpack-carousel.php:53:			$this->prebuilt_widths = apply_filters( 'jp_carousel_widths', $this->prebuilt_widths );
+modules/carousel/jetpack-carousel.php:66:		return apply_filters( 'jp_carousel_maybe_disable', false );
+modules/carousel/jetpack-carousel.php:75:		return apply_filters( 'jp_carousel_asset_version', $version );
+modules/carousel/jetpack-carousel.php:79:		if ( ! empty( $output ) && ! apply_filters( 'jp_carousel_force_enable', false ) ) {
+modules/carousel/jetpack-carousel.php:135:			$localize_strings = apply_filters( 'jp_carousel_localize_strings', $localize_strings );
+modules/carousel/jetpack-carousel.php:218:		$html = apply_filters( 'jp_carousel_add_data_to_images', $html, $attachment_id );
+modules/carousel/jetpack-carousel.php:230:			$extra_data = apply_filters( 'jp_carousel_add_data_to_container', $extra_data );
+modules/comments/base.php:267:			$comment_cookie_lifetime = apply_filters( 'comment_cookie_lifetime', 30000000 );
+modules/comments/comments.php:187:			echo '<p id="must-log-in-to-comment">' . sprintf( apply_filters( 'jetpack_must_log_in_to_comment', __( 'You must <a href="%s">log in</a> to post a comment.', 'jetpack' ) ), wp_login_url( get_permalink() . '#respond' ) ) . '</p>';
+modules/contact-form/grunion-contact-form.php:159:			apply_filters( 'the_content', $post->post_content );
+modules/contact-form/grunion-contact-form.php:290:		return apply_filters( 'contact_form_is_spam_akismet', $result, $form );
+modules/contact-form/grunion-contact-form.php:598:		if ( apply_filters( 'jetpack_bail_on_shortcode', false, 'contact-form' ) || is_feed() ) {
+modules/contact-form/grunion-contact-form.php:706:			$r .= apply_filters( 'grunion_contact_form_success_message', $r_success_message );
+modules/contact-form/grunion-contact-form.php:719:			$url = apply_filters( 'grunion_contact_form_form_action', "{$url}#contact-form-{$id}", $GLOBALS['post'], $id );
+modules/contact-form/grunion-contact-form.php:875:			$comment_author = Grunion_Contact_Form_Plugin::strip_tags( stripslashes( apply_filters( 'pre_comment_author_name', addslashes( $field->value ) ) ) );
+modules/contact-form/grunion-contact-form.php:881:			$comment_author_email = Grunion_Contact_Form_Plugin::strip_tags( stripslashes( apply_filters( 'pre_comment_author_email', addslashes( $field->value ) ) ) );
+modules/contact-form/grunion-contact-form.php:887:			$comment_author_url = Grunion_Contact_Form_Plugin::strip_tags( stripslashes( apply_filters( 'pre_comment_author_url', addslashes( $field->value ) ) ) );
+modules/contact-form/grunion-contact-form.php:938:		$is_spam = apply_filters( 'contact_form_is_spam', $akismet_values );
+modules/contact-form/grunion-contact-form.php:947:		$to = (array) apply_filters( 'contact_form_to', $to );
+modules/contact-form/grunion-contact-form.php:964:		$subject = apply_filters( 'contact_form_subject', $contact_form_subject );
+modules/contact-form/grunion-contact-form.php:1007:		$message = apply_filters( 'contact_form_message', $message );
+modules/contact-form/grunion-contact-form.php:1072:		elseif ( apply_filters( 'grunion_still_email_spam', FALSE ) == TRUE ) // don't send spam by default.  Filterable.
+modules/contact-form/grunion-contact-form.php:1086:		$redirect = apply_filters( 'grunion_contact_form_redirect_url', $redirect, $id, $post_id );
+modules/contact-form/grunion-contact-form.php:1376:	if ( apply_filters( 'grunion_optimize_table', ( $random_number == 11 ) ) ) {
+modules/custom-css/custom-css.php:17:		define( 'SAFECSS_USE_ACE', ! jetpack_is_mobile() && ! Jetpack_User_Agent_Info::is_ipad() && apply_filters( 'safecss_use_ace', true ) );
+modules/custom-css/custom-css.php:379:		return apply_filters( 'safecss_is_freetrial', false );
+modules/custom-css/custom-css.php:383:		$default_css = apply_filters( 'safecss_get_css_error', false );
+modules/custom-css/custom-css.php:423:					apply_filters(
+modules/custom-css/custom-css.php:434:		$css = apply_filters( 'safecss_css', $css );
+modules/custom-css/custom-css.php:448:		if ( apply_filters( 'safecss_style_error', false ) )
+modules/custom-css/custom-css.php:503:		$href = apply_filters( 'safecss_href', $href, $blog_id );
+modules/custom-css/custom-css.php:517:			return apply_filters( 'safecss_style_filter_url', plugins_url( 'custom-css/blank.css', __FILE__ ) );
+modules/custom-css/custom-css.php:545:		$message = apply_filters( 'safecss_preview_message', $message );
+modules/custom-css/custom-css.php:558:		$preview_flag_js = apply_filters( 'safecss_preview_flag_js', $preview_flag_js );
+modules/custom-css/custom-css.php:806:					<p class="css-support"><?php echo apply_filters( 'safecss_intro_text', __( 'New to CSS? Start with a <a href="http://www.htmldog.com/guides/cssbeginner/">beginner tutorial</a>. Questions?
+modules/custom-css/custom-css.php:842:				$preprocessors = apply_filters( 'jetpack_custom_css_preprocessors', array() );
+modules/custom-css/custom-css.php:894:								<?php printf( __( 'Replace <a href="%s">theme\'s CSS</a> <b>(Advanced)</b>', 'jetpack' ), apply_filters( 'safecss_theme_stylesheet_url', get_stylesheet_uri() ) ); ?>
+modules/custom-css/custom-css.php:1032:			$preprocessors = apply_filters( 'jetpack_custom_css_preprocessors', array() );
+modules/gravatar-hovercards.php:248:	return apply_filters( 'grofiles_hovercards_data_callbacks', array() );
+modules/holiday-snow.php:37:	if ( ! apply_filters( 'jetpack_holiday_chance_of_snow', true ) )
+modules/holiday-snow.php:42:	$snowstorm_url = apply_filters( 'jetpack_holiday_snow_js_url', plugins_url( 'holiday-snow/snowstorm.js', __FILE__ ) );
+modules/holiday-snow.php:59:	return apply_filters( 'jetpack_holiday_snow_option_name', 'jetpack_holiday_snow_enabled' );
+modules/holiday-snow.php:69:	return apply_filters( 'jetpack_is_holiday_snow_season', $snow );
+modules/infinite-scroll/infinity.php:180:			$settings['footer_widgets'] = apply_filters( 'infinite_scroll_has_footer_widgets', $settings['footer_widgets'] );
+modules/infinite-scroll/infinity.php:201:			self::$settings = apply_filters( 'infinite_scroll_settings', $settings );
+modules/infinite-scroll/infinity.php:402:	 * @uses home_url, is_ssl, add_query_arg, trailingslashit, apply_filters
+modules/infinite-scroll/infinity.php:418:		return apply_filters( 'infinite_scroll_ajax_url', $ajaxurl );
+modules/infinite-scroll/infinity.php:441:	 * @uses self::get_settings, esc_js, esc_url_raw, self::has_wrapper, __, apply_filters, do_action
+modules/infinite-scroll/infinity.php:478:		$js_settings = apply_filters( 'infinite_scroll_js_settings', $js_settings );
+modules/infinite-scroll/infinity.php:547:		$scripts = apply_filters( 'infinite_scroll_existing_scripts', $scripts );
+modules/infinite-scroll/infinity.php:550:		$styles = apply_filters( 'infinite_scroll_existing_stylesheets', $styles );
+modules/infinite-scroll/infinity.php:625:		$results['scripts'] = apply_filters( 'infinite_scroll_additional_scripts', $results['scripts'], $initial_scripts, $results, $query_args, $wp_query );
+modules/infinite-scroll/infinity.php:709:		$results['styles'] = apply_filters( 'infinite_scroll_additional_stylesheets', $results['styles'], $initial_styles, $results, $query_args, $wp_query );
+modules/infinite-scroll/infinity.php:724:	 * @uses current_user_can, get_option, self::set_last_post_time, current_user_can, apply_filters, self::get_settings, add_filter, WP_Query, remove_filter, have_posts, wp_head, do_action, add_action, this::render, this::has_wrapper, esc_attr, wp_footer, sharing_register_post_for_share_counts, get_the_id
+modules/infinite-scroll/infinity.php:758:		$query_args = apply_filters( 'infinite_scroll_query_args', $query_args );
+modules/infinite-scroll/infinity.php:828:		echo json_encode( apply_filters( 'infinite_scroll_results', $results, $query_args, $wp_query ) );
+modules/infinite-scroll/infinity.php:850:	 * @uses apply_filters, current_theme_supports, is_home, is_archive, self::get_settings
+modules/infinite-scroll/infinity.php:854:		return (bool) apply_filters( 'infinite_scroll_archive_supported', current_theme_supports( 'infinite-scroll' ) && ( is_home() || is_archive() ), self::get_settings() );
+modules/infinite-scroll/infinity.php:860:	 * @uses self::get_settings, self::set_last_post_time, self::archive_supports_infinity, __, wp_get_theme, get_current_theme, apply_filters, home_url, esc_attr, get_bloginfo, bloginfo
+modules/infinite-scroll/infinity.php:878:		$credits = apply_filters( 'infinite_scroll_credit', $credits );
+modules/infinite-scroll/infinity.php:940:	$customization_file = apply_filters( 'infinite_scroll_customization_file', dirname( __FILE__ ) . "/themes/{$theme_name}.php", $theme_name );
+modules/infinite-scroll.php:113:	 * @uses is_admin, wp_get_theme, get_theme, get_current_theme, apply_filters
+modules/infinite-scroll.php:123:		$customization_file = apply_filters( 'infinite_scroll_customization_file', dirname( __FILE__ ) . "/infinite-scroll/themes/{$theme['Stylesheet']}.php", $theme['Stylesheet'] );
+modules/likes.php:111:		if ( apply_filters( 'post_flair_disable', false ) )
+modules/likes.php:115:		$title = apply_filters( 'likes_meta_box_title', __( 'Likes', 'jetpack' ) );
+modules/likes.php:240:		<?php echo apply_filters( 'sharing_show_buttons_on_row_start', '<tr valign="top">' ); ?>
+modules/likes.php:259:	  	<?php echo apply_filters( 'sharing_show_buttons_on_row_end', '</tr>' ); ?>
+modules/likes.php:800:		return apply_filters( 'wpl_get_options', $setting );
+modules/likes.php:865:		$enabled = apply_filters( 'sharing_show', $enabled, $post );
+modules/likes.php:867:		return (bool) apply_filters( 'wpl_is_likes_visible', $enabled );
+modules/likes.php:875:		return (bool) apply_filters( 'wpl_is_enabled_sitewide', ! get_option( 'disabled_likes' ) );
+modules/likes.php:884:		return (bool) apply_filters( 'jetpack_comment_likes_enabled', get_option( 'jetpack_comment_likes_enabled', true ) );
+modules/likes.php:902:		return (bool) apply_filters( 'jetpack_admin_bar_likes_enabled', true );
+modules/likes.php:935:		return (bool) apply_filters( 'wpl_is_index_disabled', (bool) in_array( 'index', $options['show'] ) );
+modules/likes.php:945:		return (bool) apply_filters( 'wpl_is_single_post_disabled', (bool) in_array( 'post', $options['show'] ) );
+modules/likes.php:955:		return (bool) apply_filters( 'wpl_is_single_page_disabled', (bool) in_array( 'page', $options['show'] ) );
+modules/likes.php:965:		return (bool) apply_filters( 'wpl_is_attachment_disabled', (bool) in_array( 'attachment', $options['show'] ) );
+modules/minileven/minileven.php:44:	return apply_filters( 'jetpack_check_mobile', $is_mobile );
+modules/minileven/minileven.php:85:	return apply_filters( 'jetpack_mobile_stylesheet', 'pub/minileven', $theme );
+modules/minileven/minileven.php:89:	return apply_filters( 'jetpack_mobile_template', 'pub/minileven', $theme );
+modules/minileven/theme/pub/minileven/image.php:49:								$attachment_size = apply_filters( 'minileven_attachment_size', 848 );
+modules/module-extras.php:17: * @uses is_admin, wp_get_theme, get_theme, get_current_theme, apply_filters
+modules/module-extras.php:28:		$customization_file = apply_filters( 'infinite_scroll_customization_file', dirname( __FILE__ ) . "/infinite-scroll/themes/{$theme['Stylesheet']}.php", $theme['Stylesheet'] );
+modules/publicize/publicize-jetpack.php:244:		$url = apply_filters( 'publicize_api_url', 'https://public-api.wordpress.com/connect/?jetpack=publicize' );
+modules/publicize/publicize.php:49:			apply_filters( 'wpas_default_message', $this->default_message ),
+modules/publicize/publicize.php:55:			apply_filters( 'wpas_default_prefix', $this->default_prefix ),
+modules/publicize/publicize.php:60:			apply_filters( 'wpas_default_suffix', $this->default_suffix ),
+modules/publicize/publicize.php:288:				if ( false == apply_filters( 'wpas_submit_post?', $submit_post, $post_id, $service_name ) ) {
+modules/publicize/ui.php:403:							if ( !$continue = apply_filters( 'wpas_submit_post?', true, $post->ID, $name ) )
+modules/publicize/ui.php:446:							$checked = apply_filters( 'publicize_checkbox_default', $checked, $post->ID, $name, $connection );
+modules/publicize/ui.php:540:			<?php echo apply_filters( 'publicize_form', $publicize_form ); ?>
+modules/sharedaddy/sharedaddy.php:23:	$title = apply_filters( 'sharing_meta_box_title', __( 'Sharing', 'jetpack' ) );
+modules/sharedaddy/sharing-service.php:65:		return apply_filters( 'sharing_services', $services );
+modules/sharedaddy/sharing-service.php:150:			$enabled = apply_filters( 'sharing_default_services', $enabled );
+modules/sharedaddy/sharing-service.php:168:		$blog = apply_filters( 'sharing_services_enabled', $blog );
+modules/sharedaddy/sharing-service.php:207:		$options['global'] = apply_filters( 'sharing_default_global', $options['global'] );
+modules/sharedaddy/sharing-service.php:405:	if ( apply_filters( 'sharing_js', true ) ) {
+modules/sharedaddy/sharing-service.php:506:	$show = apply_filters( 'sharing_show', $show, $post );
+modules/sharedaddy/sharing-sources.php:35:		return apply_filters( 'sharing_permalink', get_permalink( $post_id ), $post_id, $this->id );
+modules/sharedaddy/sharing-sources.php:223:			if ( apply_filters( 'sharing_email_check', true, $post, $post_data ) ) {
+modules/sharedaddy/sharing-sources.php:231:				if ( ( $data = apply_filters( 'sharing_email_can_send', $data ) ) !== false ) {
+modules/sharedaddy/sharing-sources.php:297:			<img style="float: right; display: none" class="loading" src="<?php echo apply_filters( 'jetpack_static_url', plugin_dir_url( __FILE__ ) . 'images/loading.gif' ); ?>" alt="loading" width="16" height="16" />
+modules/sharedaddy/sharing-sources.php:335:		return apply_filters( 'jetpack_sharing_twitter_via', '', $post->ID );
+modules/sharedaddy/sharing-sources.php:340:		$related_accounts = apply_filters( 'jetpack_sharing_twitter_related', array(), $post->ID );
+modules/sharedaddy/sharing-sources.php:727:			$widths = apply_filters( 'sharing_facebook_like_widths', $widths );
+modules/sharedaddy/sharing.php:329:	  				<?php echo apply_filters( 'sharing_show_buttons_on_row_start', '<tr valign="top">' ); ?>
+modules/sharedaddy/sharing.php:345:	  				<?php echo apply_filters( 'sharing_show_buttons_on_row_end', '</tr>' ); ?>
+modules/shortcodes/audio.php:49:		$ap_options = apply_filters(
+modules/shortcodes/audio.php:235:		$swfurl = apply_filters(
+modules/shortcodes/googlemaps.php:49:	if ( !isset($atts[0]) || apply_filters( 'jetpack_bail_on_shortcode', false, 'googlemaps' ) )
+modules/shortcodes/polldaddy.php:87:				$title = apply_filters( 'wp_title', $post->post_title, '', '' );
+modules/shortcodes/slideshow.php:197:		wp_localize_script( 'jetpack-slideshow', 'jetpackSlideshowSettings', apply_filters( 'jetpack_js_slideshow_settings', array(
+modules/shortcodes/videopress.php:1245:			return self::esc_flash_params( apply_filters( 'video_flash_params', (array) $this->video->players->swf->params, 10, 1 ) );
+modules/shortcodes/vimeo.php:67:	$html = apply_filters( 'video_embed_html', $html );
+modules/shortcodes/youtube.php:166:	if ( apply_filters( 'jetpack_bail_on_shortcode', false, 'youtube' ) )
+modules/shortcodes/youtube.php:218:	$w = (int) apply_filters( 'youtube_width', $w );
+modules/shortcodes/youtube.php:219:	$h = (int) apply_filters( 'youtube_height', $h );
+modules/shortcodes/youtube.php:250:	$html = apply_filters( 'video_embed_html', $html );
+modules/stats.php:230:	$kvs = apply_filters( 'stats_array', $kvs );
+modules/subscriptions.php:458:		echo apply_filters( 'jetpack_comment_subscription_form', $str );
+modules/subscriptions.php:497:		$cookie_lifetime = apply_filters( 'comment_cookie_lifetime', 30000000 );
+modules/tiled-gallery/tiled-gallery.php:293:		return apply_filters( 'tiled_gallery_content_width', $tiled_gallery_content_width );
+modules/widgets/facebook-likebox.php:31:			apply_filters( 'jetpack_widget_name', __( 'Facebook Like Box', 'jetpack' ) ),
+modules/widgets/facebook-likebox.php:56:		$title    = apply_filters( 'widget_title', $instance['title'] );
+modules/widgets/facebook-likebox.php:203:		return apply_filters( 'jetpack_facebook_likebox_defaults', $defaults );
+modules/widgets/gravatar-profile.php:21:			apply_filters( 'jetpack_widget_name', __( 'Gravatar Profile', 'jetpack' ) ),
+modules/widgets/gravatar-profile.php:34:		$title = apply_filters( 'widget_title', $instance['title'] );
+modules/widgets/image-widget.php:22:		$title = apply_filters( 'widget_title', $instance['title'] );
+modules/widgets/readmill.php:11:	 		apply_filters( 'jetpack_widget_name', esc_html__( 'Send To Readmill', 'jetpack' ) ),
+modules/widgets/readmill.php:113:		$title = apply_filters( 'widget_title', $title );
+modules/widgets/rsslinks-widget.php:19:		$title = apply_filters( 'widget_title', $instance['title'] );
+modules/widgets/top-posts.php:35:			apply_filters( 'jetpack_widget_name', __( 'Top Posts &amp; Pages', 'jetpack' ) ),
+modules/widgets/top-posts.php:121:		$title = apply_filters( 'widget_title', $title );
+modules/widgets/top-posts.php:137:				'gravatar_default' => apply_filters( 'jetpack_static_url', is_ssl() ? 'https' : 'http' . '://en.wordpress.com/i/logo/white-gray-80.png' ),
+modules/widgets/top-posts.php:148:			$get_image_options = apply_filters( 'jetpack_top_posts_widget_image_options', $get_image_options );
+modules/widgets/twitter.php:24:			apply_filters( 'jetpack_widget_name', __( 'Twitter', 'jetpack' ) ),
+modules/widgets/twitter.php:59:		$title = apply_filters( 'widget_title', $instance['title'] );

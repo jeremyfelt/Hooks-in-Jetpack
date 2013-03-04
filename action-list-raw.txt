@@ -1,0 +1,105 @@
+class.jetpack-post-images.php:365:		do_action( 'jetpack_postimages_pre_get_image', $post_id );
+class.jetpack-post-images.php:378:		do_action( 'jetpack_postimages_post_get_image', $post_id );
+class.json-api-endpoints.php:1547:		do_action( 'wpcom_json_api_objects', 'posts' );
+class.json-api-endpoints.php:1660:					do_action( 'wpcom_json_api_objects', 'posts', count( $posts ) );
+class.json-api-endpoints.php:1901:		do_action( 'wpcom_json_api_objects', 'posts' );
+class.json-api-endpoints.php:1923:		do_action( 'wpcom_json_api_objects', 'posts' );
+class.json-api-endpoints.php:1988:		do_action( 'wpcom_json_api_objects', 'taxonomies' );
+class.json-api-endpoints.php:2058:		do_action( 'wpcom_json_api_objects', 'taxonomies' );
+class.json-api-endpoints.php:2102:		do_action( 'wpcom_json_api_objects', 'taxonomies' );
+class.json-api-endpoints.php:2127:		do_action( 'wpcom_json_api_objects', 'taxonomies' );
+class.json-api-endpoints.php:2331:		do_action( 'wpcom_json_api_objects', 'comments' );
+class.json-api-endpoints.php:2505:					do_action( 'wpcom_json_api_objects', 'comments', count( $return_comments ) );
+class.json-api-endpoints.php:2665:		do_action( 'wpcom_json_api_objects', 'comments' );
+class.json-api-endpoints.php:2741:		do_action( 'wpcom_json_api_objects', 'comments' );
+class.json-api-endpoints.php:2762:		do_action( 'wpcom_json_api_objects', 'comments' );
+class.json-api-endpoints.php:2835:		do_action( 'wpcom_json_api_objects', 'sites' );
+class.json-api.php:212:			do_action( 'wpcom_json_api_output', 'help' );
+class.json-api.php:234:		do_action( 'wpcom_json_api_output', $endpoint->stat );
+jetpack.php:387:			do_action( 'jetpack_module_loaded_' . $module );
+jetpack.php:390:		do_action( 'jetpack_modules_loaded' );
+jetpack.php:908:		do_action( 'jetpack_before_activate_default_modules', $min_version, $max_version, $other_modules );
+jetpack.php:942:			do_action( 'jetpack_activate_module', $module );
+jetpack.php:958:		do_action( 'jetpack_activate_default_modules', $min_version, $max_version, $other_modules );
+jetpack.php:1000:		do_action( 'jetpack_activate_module', $module );
+jetpack.php:1012:		do_action( "jetpack_activate_module_$module" );
+jetpack.php:1025:		do_action( "jetpack_deactivate_module_$module" );
+jetpack.php:1362:		do_action( 'jetpack_admin_menu' );
+jetpack.php:1586:			do_action( 'jetpack_module_configuration_head_' . $_GET['configure'] );
+jetpack.php:2071:			do_action( 'jetpack_module_configuration_load_' . $_GET['configure'] );
+jetpack.php:2307:			<?php do_action( 'jetpack_notices' ) ?>
+jetpack.php:2481:			<?php do_action( 'jetpack_module_configuration_screen_' . $module_id ); ?>
+jetpack.php:2598:					<?php do_action( 'jetpack_learn_more_button_' . $module ) ?>
+jetpack.php:2607:					<?php do_action( 'jetpack_learn_more_button_' . $module ) ?>
+jetpack.php:2623:					do_action( 'jetpack_module_more_info_connected_' . $module );
+jetpack.php:2625:					do_action( 'jetpack_module_more_info_' . $module );
+modules/after-the-deadline/proxy.php:26:		do_action( 'atd_http_post_error', 'http-error' );
+modules/after-the-deadline/proxy.php:29:		do_action( 'atd_http_post_error', $code );
+modules/carousel/jetpack-carousel.php:86:		do_action( 'jp_carousel_thumbnails_shown' );
+modules/carousel/jetpack-carousel.php:146:			do_action( 'jp_carousel_enqueue_assets', $this->first_run, $localize_strings );
+modules/carousel/jetpack-carousel.php:243:		do_action('jp_carousel_check_blog_user_privileges');
+modules/carousel/jetpack-carousel.php:309:		do_action('jp_carousel_check_blog_user_privileges');
+modules/carousel/jetpack-carousel.php:353:		do_action( 'jp_carousel_post_attachment_comment' );
+modules/comments/comments.php:56:		do_action_ref_array( 'jetpack_comments_loaded', array( $this ) );
+modules/contact-form/admin.php:154:		do_action( 'contact_form_akismet', 'spam', $akismet_values );
+modules/contact-form/admin.php:557:		do_action( 'contact_form_akismet', 'spam', $akismet_values );
+modules/contact-form/admin.php:562:		do_action( 'contact_form_akismet', 'spam', $akismet_values );
+modules/contact-form/grunion-contact-form.php:1063:		do_action( 'grunion_pre_message_sent', $post_id, $all_values, $extra_values );
+modules/custom-css/custom-css.php:54:			do_action( 'safecss_migrate_post' );
+modules/custom-css/custom-css.php:116:		do_action( 'safecss_save_pre', $args );
+modules/custom-css/custom-css.php:155:			do_action( 'safecss_parse_pre', $csstidy, $css, $args );
+modules/custom-css/custom-css.php:159:			do_action( 'safecss_parse_post', $csstidy, $warnings, $args );
+modules/custom-css/custom-css.php:190:			do_action( 'safecss_save_preview_post' );
+modules/custom-css/custom-css.php:440:		do_action( 'safecss_print_pre' );
+modules/custom-css/custom-css.php:798:			<?php do_action( 'custom_design_header' ); ?>
+modules/custom-css/custom-css.php:929:				<?php do_action( 'custom_css_submitbox_misc_actions' ); ?>
+modules/custom-css/custom-css.php:1447:			do_action( 'csstidy_optimize_postparse', $this );
+modules/custom-css/custom-css.php:1453:			do_action( 'csstidy_optimize_subvalue', $this );
+modules/holiday-snow.php:32:		do_action( 'jetpack_holiday_snow_option_updated' );
+modules/holiday-snow.php:40:	do_action( 'jetpack_holiday_snowing' );
+modules/infinite-scroll/infinity.php:434:		do_action( 'custom_ajax_infinite_scroll' );
+modules/infinite-scroll/infinity.php:441:	 * @uses self::get_settings, esc_js, esc_url_raw, self::has_wrapper, __, apply_filters, do_action
+modules/infinite-scroll/infinity.php:480:		do_action( 'infinite_scroll_wp_head' );
+modules/infinite-scroll/infinity.php:724:	 * @uses current_user_can, get_option, self::set_last_post_time, current_user_can, apply_filters, self::get_settings, add_filter, WP_Query, remove_filter, have_posts, wp_head, do_action, add_action, this::render, this::has_wrapper, esc_attr, wp_footer, sharing_register_post_for_share_counts, get_the_id
+modules/infinite-scroll/infinity.php:779:			do_action( 'infinite_scroll_render' );
+modules/infinite-scroll/infinity.php:788:				do_action( 'infinite_scroll_render' );
+modules/infinite-scroll/infinity.php:795:				do_action( 'infinite_scroll_empty' );
+modules/infinite-scroll/infinity.php:824:			do_action( 'infinite_scroll_empty' );
+modules/likes.php:169:		do_action( 'start_likes_meta_box_content', $post );
+modules/likes.php:179:		do_action( 'end_likes_meta_box_content', $post );
+modules/likes.php:306:				do_action( 'sharing_admin_update' );
+modules/likes.php:373:			<?php do_action( 'pre_admin_screen_sharing' ) ?>
+modules/likes.php:394:			<?php do_action( 'sharing_global_options' ); ?>
+modules/minileven/minileven.php:119:				do_action( 'mobile_reject_mobile' );
+modules/minileven/minileven.php:132:				do_action( 'mobile_force_mobile' );
+modules/minileven/minileven.php:155:			do_action( 'mobile_app_promo_download', $_GET['app-download'] );
+modules/minileven/minileven.php:189:		do_action( 'mobile_setup' );
+modules/minileven/theme/pub/minileven/footer.php:25:		<?php do_action( 'wp_mobile_theme_footer' ); ?>
+modules/minileven/theme/pub/minileven/footer.php:26:		<?php do_action( 'minileven_credits' ); ?>
+modules/publicize/publicize.php:318:				do_action( 'publicize_save_meta', $submit_post, $post_id, $service_name, $connection );
+modules/publicize/ui.php:47:				<?php do_action( 'pre_admin_screen_sharing' ) ?>
+modules/sharedaddy/sharedaddy.php:30:	do_action( 'start_sharing_meta_box_content', $post );
+modules/sharedaddy/sharedaddy.php:43:	do_action( 'end_sharing_meta_box_content', $post );
+modules/sharedaddy/sharing-service.php:122:		do_action( 'sharing_get_services_state', array(
+modules/sharedaddy/sharing-service.php:293:		do_action( 'sharing_get_button_state', array( 'id' => $id, 'options' => $options, 'service' => $service ) );
+modules/sharedaddy/sharing-sources.php:148:		do_action( 'sharing_bump_stats', array( 'service' => $this, 'post' => $post ) );
+modules/sharedaddy/sharing-sources.php:235:					do_action( 'sharing_email_send_post', $data );
+modules/sharedaddy/sharing-sources.php:295:			<?php do_action( 'sharing_email_dialog', 'jetpack' ); ?>
+modules/sharedaddy/sharing.php:43:			do_action( 'sharing_admin_update' );
+modules/sharedaddy/sharing.php:165:		<?php do_action( 'pre_admin_screen_sharing' ) ?>
+modules/sharedaddy/sharing.php:347:	  				<?php do_action( 'sharing_global_options' ); ?>
+modules/sharedaddy/sharing.php:392:	  				<?php do_action( 'sharing_new_service_form' ); ?>
+modules/sharedaddy/sharing.php:396:		<?php do_action( 'post_admin_screen_sharing' ) ?>
+modules/shortcodes/dailymotion.php:47:			do_action( 'jetpack_embed_to_shortcode', 'dailymotion', $id );
+modules/shortcodes/flickr.php:76:			do_action( 'jetpack_embed_to_shortcode', 'flickr_video', $flashvars['photo_id'] );
+modules/shortcodes/googlemaps.php:41:	do_action( 'jetpack_embed_to_shortcode', 'googlemaps', $url );
+modules/shortcodes/youtube.php:81:			do_action( 'jetpack_embed_to_shortcode', 'youtube', $url );
+modules/widgets/facebook-likebox.php:84:		do_action( 'jetpack_stats_extra', 'widget', 'facebook-likebox' );
+modules/widgets/gravatar-profile.php:99:			do_action( 'jetpack_stats_extra', 'widget', 'grofile' );
+modules/widgets/twitter.php:96:		do_action( 'jetpack_bump_stats_extras', 'widget', 'twitter' );
+modules/widgets/twitter.php:202:						do_action( 'jetpack_bump_stats_extras', 'twitter_widget', "request-fail-{$response_code}-bad-data" );
+modules/widgets/twitter.php:210:					do_action( 'jetpack_bump_stats_extras', 'twitter_widget', 'request-success' );
+modules/widgets/twitter.php:214:					do_action( 'jetpack_bump_stats_extras', 'twitter_widget', "request-fail-{$response_code}" );
+modules/widgets/twitter.php:221:					do_action( 'jetpack_bump_stats_extras', 'twitter_widget', "request-fail-{$response_code}" );
+modules/widgets/twitter.php:250:				do_action( 'jetpack_bump_stats_extras', 'twitter_widget', 'follow_button_enabled' );
+modules/widgets/twitter.php:252:				do_action( 'jetpack_bump_stats_extras', 'twitter_widget', 'follow_button_disabled' );
