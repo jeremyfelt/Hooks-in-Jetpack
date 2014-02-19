@@ -1,4 +1,4 @@
-Hooks in Jetpac
+Hooks in Jetpack
 ================
 
 Sometimes I get tired of digging around on the fly for hook options in Jetpack. This gives me a list to read. If I can get fancy enough with some regex, it might extract all the useful pieces of info about the hook at one point into an automated markdown document. For now it's a list of hooks.
